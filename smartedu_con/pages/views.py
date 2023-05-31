@@ -24,9 +24,6 @@ class IndexView(TemplateView):
         return context
 
 
-# def index(request):
-#     return render(request, 'index.html')
-
 class AboutView(TemplateView):
     template_name = "about.html"
     
@@ -41,10 +38,3 @@ class ContactView(SuccessMessageMixin, FormView):
         form.save()
         return super().form_valid(form)
         
-
-
-
-
-
-# def about(request):
-#     return render(request, 'about.html')
